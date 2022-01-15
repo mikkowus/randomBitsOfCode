@@ -1,4 +1,4 @@
-looks like import requests
+import requests
 
 def Is_Yankees_Site_online(url):
   try:
@@ -19,14 +19,19 @@ def PRINT_MY_NAME_NOOB(name):
   #click on the little purple chat icon on the bottom right
   #looks like we can edit code at the same Time
   
-  print(f"Hi, {name}.")
+  #print(f"Hi, {name}.")
 
 def main():
   name = input('What is your name?\n')
   PRINT_MY_NAME_NOOB(name)
 
+  # using + will result in undefined behavior
+  # better off with an fString aka print(f"text {var}")
+  # Especially sus in python 3
+  #open the chat
+  #I updated it
   if Is_Yankees_Site_online('https://www.mlb.com/yankees') == 200:
-    print("Yea yankees site is online")
+    print(f"Yea " + name + ", the yankees site is online")
 
 
 if __name__ == '__main__':
