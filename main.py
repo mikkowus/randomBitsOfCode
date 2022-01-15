@@ -10,7 +10,7 @@ def Is_Yankees_Site_online(url):
 
 
 def PRINT_MY_NAME_NOOB(name):
-  print('Hi, %s.' % name)
+  #print('Hi, %s.' % name)
 
   # fstrings are better in 2022 than what?
   # Better than % .format() style strings(See
@@ -19,7 +19,7 @@ def PRINT_MY_NAME_NOOB(name):
   #click on the little purple chat icon on the bottom right
   #looks like we can edit code at the same Time
   
-  #print(f"Hi, {name}.")
+  print(f"Hi, {name}.")
 
 def main():
   name = input('What is your name?\n')
@@ -30,8 +30,9 @@ def main():
   # Especially sus in python 3
   #open the chat
   #I updated it
+  #Ok, im actually going to go find socks and go outside now
   if Is_Yankees_Site_online('https://www.mlb.com/yankees') == 200:
-    print(f"Yea " + name + ", the yankees site is online")
+    print(f"Yea {name}, the yankees site is online")
 
 
 if __name__ == '__main__':
