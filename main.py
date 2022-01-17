@@ -1,4 +1,6 @@
 import requests
+import pirate_nintendo_roms
+from yes_or_no import yes_or_no
 
 def Is_Yankees_Site_online(url):
   try:
@@ -34,8 +36,12 @@ def main():
   if Is_Yankees_Site_online('https://www.mlb.com/yankees') == 200:
     print(f"Yea {name}, the yankees site is online")
 
+  if yes_or_no(f'Hey {name}, do you wanna pirate some roms?'):
+    print('yarrr, here be links')
+    for link in pirate_nintendo_roms.parse_rom_urls():
+      print(link)
+  else:
+    print('nay? shiver me timbers are you the FBI?')
 
 if __name__ == '__main__':
-  main()
-
-  
+  main()  
