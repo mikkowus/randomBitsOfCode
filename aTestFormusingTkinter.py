@@ -13,7 +13,7 @@ b1 = Entry(window).grid(row = 1,column = 1)
 c1 = Entry(window).grid(row = 2,column = 1)
 d1 = Entry(window).grid(row = 3,column = 1)
 def clicked():
-   res = "Welcome to " + txt.get()
+   res = "Welcome to " # + txt.get()
    lbl.configure(text = res)
 btn = ttk.Button(window ,text="Submit").grid(row=4,column=0)
 window.mainloop()

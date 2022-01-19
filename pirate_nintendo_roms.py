@@ -2,7 +2,7 @@
 
 import re
 import requests
-from bs4 import BeautifulSoup
+from bs4 import BeautifulSoup##this does not work. It is borked
 
 def parse_rom_urls():
   # URLS
