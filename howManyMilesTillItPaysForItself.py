@@ -1,6 +1,6 @@
 ####################
 #This math will help you see how many miles need to be driven to pay off a new part in
-#your car
+#your car. It is math
 ####################
 
 partCost = 100 #y
